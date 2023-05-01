@@ -1,29 +1,59 @@
 body {
     margin: 0;
-    background-color: rgb(250, 241, 225);
+    background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
-    color: rgb(0, 52, 150);
+    color: rgb(41, 60, 95);
 }
 h5 {
     text-align: left;
-    margin-left: 5px;
+    margin-left: 350px;
 }
 h1, h5 {
     padding: 0 20px 0 20px;
 }
 
 h3 {
-    padding-left: 50px;
+    padding-left: 230px;
 }
 p {
     font-size: 13px;
-    padding: 0 80px 0 80px;
+    padding: 0 270px 0 270px;
 }
+
+
+.menu {
+    text-align: center;
+    padding-top: 10px;
+}
+button {
+    color: #666666;
+    background-color: silver;
+    margin-right: 50px;
+    border-color:  rgb(255, 255, 255);
+    font-size: 15px;
+}
+#buto_dreta {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#buto_mid {
+    border-radius: 4px;
+}
+#buto_esquerra {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius:  3px;
+    border-bottom-left-radius: 3px;
+}
+
+
 
 
 
@@ -32,7 +62,7 @@ position: fixed;
 left: 0;
 bottom: 12px;
 width: 100%;
-background: #fcb42e48;
+background: rgba(218, 225, 231, 0.808);
 padding-top: 60px;
 }
 
@@ -68,7 +98,7 @@ font-weight: 400;
 color: #525252;
 }
 footer a {
-    color: rgb(255, 153, 0);
+    color: rgb(73, 126, 150);
     font-weight: 800;
     font-size: 15px;
 
