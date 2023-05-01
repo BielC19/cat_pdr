@@ -11,7 +11,7 @@ h1 {
 }
 h5 {
     text-align: left;
-    margin-left: 350px;
+    margin-left: 23%;
 }
 h1, h5 {
     padding: 0 20px 0 20px;
@@ -22,7 +22,7 @@ h3 {
 }
 p {
     font-size: 13px;
-    padding: 0 270px 0 270px;
+    padding: 0 20% 0 20%;
 }
 
 
@@ -58,12 +58,12 @@ button {
 
 
 section {
-position: fixed;
 left: 0;
 bottom: 12px;
 width: 100%;
 background: rgba(218, 225, 231, 0.808);
 padding-top: 60px;
+
 }
 
 footer {
@@ -78,6 +78,9 @@ footer {
     margin: 0 auto;
     max-width: 600px;
     padding: 0;
+}
+#espai {
+    margin-top: 23%;
 }
 }
 
