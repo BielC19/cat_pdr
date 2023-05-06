@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>Joc de paraules en català</title>
     <link rel="stylesheet" href="./.css/prova2.css">
+    <link rel="stylesheet" href="./.css/general.css">
 </head>
 <body>
+    <div class="menu">
+        <a href="cat_pdr.html"><button id="buto_dreta">Inici</button></a>
+        <a href="objectius.html"><button id="buto_mid">Objectius</button></a>
+        <a href="marc_teoric.html"><button id="buto_mid">Marc teòric</button></a>
+        <a href="cat_prova3.html"><button id="buto_mid">Segon joc</button></a>
+        <a href="cat_prova4.html"><button id="buto_esquerra">Tercer joc</button></a>
+    </div>
     <h1>Joc de paraules en català</h1>
-    
+
     <p>Tradueix les paraules de l'anglès al català:</p>
     <h6>Tingues en compte els accents</h6>
-    
+
     <div id="paraules"></div>
-    
+
     <button onclick="comprovarRespostes()">Comprovar</button>
-    
+
     <p id="puntuacio"></p>
 
     <script>
@@ -41,7 +49,7 @@
         
         // Mostrar les paraules en anglès i caixes per a les respostes
         for (var paraula in paraules) {
-            document.getElementById("paraules").innerHTML += paraula + ": <input type='text' class='a' id='" + paraula + "'>";
+            document.getElementById("paraules").innerHTML += "<p calss='b' id='" + paraula + "1'>" + paraula + ": </p>" + "<input type='text' class='a' id='" + paraula + "'>";
         }
         
         // Comprovar les respostes
