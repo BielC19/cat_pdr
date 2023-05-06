@@ -7,48 +7,59 @@
 </head>
 <body>
 	<div class="menu">
-		<a href="cat_pdr.html"><button id="buto_dreta">Inici</button></a>
-		<a href="objectius.html"><button id="buto_esquerra">Objectius </button></a>
-		<a href="marc_teoric.html"><button id="buto_mid">Marc teòric</button></a>
-		<a href="cat_prova2.html"><button id="buto_mid">Primer joc</button></a>
-		<a href="cat_prova3.html"><button id="buto_mid">Segon joc</button></a>
+		<ul>
+			<li><a href="cat_pdr.html"><button id="buto_dreta">Inici</button></a></li>
+			<li><a href="objectius.html"><button id="buto_esquerra">Objectius </button></a></li>
+			<li><a href="marc_teoric.html"><button id="buto_mid">Marc teòric</button></a></li>
+			<li><a href="cat_prova2.html"><button id="buto_mid">Primer joc</button></a></li>
+			<li><a href="cat_prova3.html"><button id="buto_mid">Segon joc</button></a></li>
+		</ul>
 	</div>
 	<h1>Joc per aprendre català</h1>
 
 	<p>Selecciona la paraula correcta per a cada imatge i en cas de que no hi tinguis la opcio correcta escriula:</p>
 
 	<div class="img1">
-		<img src="https://pixnio.com/free-images/2017/09/26/2017-09-26-07-22-55-400x266.jpg" alt="Gat">
+		<img src="https://th.bing.com/th/id/R.1bbcb98a07db6f5c7fb1f9bdb5fa4614?rik=VBX2%2bzfmjfcEsw&riu=http%3a%2f%2fmoja-koshka.ru%2fimages%2faimages%2fsovety%2frygie-koshki.jpg&ehk=Vz2qWAVTkposK9PSKqJXGfqEbr28ab9jYNsQRXZ6jec%3d&risl=&pid=ImgRaw&r=0" alt="Gat">
 		<br>
-		<button id="gos" onclick="alert('Incorrecte')">Gos</button>
-		<button id="gat" onclick="alert('Correcte!')">Gat</button>
-		<button id="ocell" onclick="alert('Incorrecte')">Ocell</button>
+		<button class="bt" id="gos" onclick="alert('Incorrecte')">Gos</button>
+		<button class="bt" id="gat" onclick="alert('Correcte!')">Gat</button>
+		<button class="bt" id="ocell" onclick="alert('Incorrecte')">Ocell</button>
 	</div>
 
 	<div class="img2">
 		<img src="https://1.bp.blogspot.com/-t5hULwof-Oc/T8kn_2Z7EoI/AAAAAAAAADc/RZUqBbYcBx8/s400/4.jpg" alt="Cotxe">
 		<br>
-		<button id="cotxe" onclick="alert('Incorrecte')">Cotxe</button>
-		<button id="avió" onclick="alert('Incorrecte')">Avió</button>
-		<button id="moto" onclick="alert('Correcte!')">Moto</button>
+		<button class="bt" id="cotxe" onclick="alert('Incorrecte')">Cotxe</button>
+		<button class="bt" id="avió" onclick="alert('Incorrecte')">Avió</button>
+		<button class="bt" id="moto" onclick="alert('Correcte!')">Moto</button>
 	</div>
 
 	<div class="img3">
 		<img src="https://th.bing.com/th/id/OIP.JUV2vyAsh-EhqDxAoLrxpgHaFm?pid=ImgDet&w=611&h=462&rs=1" alt="Arbre">
 		<br>
-		<button id="arbre" onclick="alert('Correcte!')">Arbre</button>
-		<button id="flor" onclick="alert('Incorrecte')">Flor</button>
-		<button id="herba">Herba</button>
+		<button class="bt" id="arbre" onclick="alert('Correcte!')">Arbre</button>
+		<button class="bt" id="flor" onclick="alert('Incorrecte')">Flor</button>
+		<button class="bt" id="herba">Herba</button>
 	</div>
 
 	<div class="img4">
 		<img src="https://media.baamboozle.com/uploads/images/11888/1575016804_47178" alt="Ordinador">
 		<br>
-		<button id="ordinador" onclick="alert('Correcte!')">Ordinador</button>
-		<button id="teclat">Teclat</button>
-		<button id="ordenador" onclick="alert('Incorrecte')">Ordenador</button>
+		<button class="bt" id="ordinador" onclick="alert('Correcte!')">Ordinador</button>
+		<button class="bt" id="teclat">Teclat</button>
+		<button class="bt" id="ordenador" onclick="alert('Incorrecte')">Ordenador</button>
 	</div>
 
+	<section>
+		<footer class="top">
+			<h2>Contacte:</h2><br>
+			<a href="cat_enzo.html">Enzo Garrido</a><br>
+			<a>Biel Costa</a>
+		</footer>
+		<footer class="bottom">
+		</footer>
+	</section>
 	<script>
 		// Canvieu el text dels botons
 		document.getElementById("gos").textContent = "Gos";

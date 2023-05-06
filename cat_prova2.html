@@ -8,11 +8,13 @@
 </head>
 <body>
     <div class="menu">
-        <a href="cat_pdr.html"><button id="buto_dreta">Inici</button></a>
-        <a href="objectius.html"><button id="buto_mid">Objectius</button></a>
-        <a href="marc_teoric.html"><button id="buto_mid">Marc teòric</button></a>
-        <a href="cat_prova3.html"><button id="buto_mid">Segon joc</button></a>
-        <a href="cat_prova4.html"><button id="buto_esquerra">Tercer joc</button></a>
+        <ul>
+            <li><a href="cat_pdr.html"><button id="buto_dreta">Inici</button></a></li>
+            <li><a href="objectius.html"><button id="buto_mid">Objectius</button></a></li>
+            <li><a href="marc_teoric.html"><button id="buto_mid">Marc teòric</button></a></li>
+            <li><a href="cat_prova3.html"><button id="buto_mid">Segon joc</button></a></li>
+            <li><a href="cat_prova4.html"><button id="buto_esquerra">Tercer joc</button></a></li>
+        </ul>
     </div>
     <h1>Joc de paraules en català</h1>
 
@@ -21,10 +23,18 @@
 
     <div id="paraules"></div>
 
-    <button onclick="comprovarRespostes()">Comprovar</button>
+    <button id="bt" onclick="comprovarRespostes()">Comprovar</button>
 
     <p id="puntuacio"></p>
-
+	<section>
+		<footer class="top">
+			<h2>Contacte:</h2><br>
+			<a href="cat_enzo.html">Enzo Garrido</a><br>
+			<a>Biel Costa</a>
+		</footer>
+		<footer class="bottom">
+		</footer>
+	</section>
     <script>
         // Llista de paraules en anglès i les seves respostes en català
         var paraules = {
@@ -49,7 +59,7 @@
         
         // Mostrar les paraules en anglès i caixes per a les respostes
         for (var paraula in paraules) {
-            document.getElementById("paraules").innerHTML += "<p calss='b' id='" + paraula + "1'>" + paraula + ": </p>" + "<input type='text' class='a' id='" + paraula + "'>";
+            document.getElementById("paraules").innerHTML += paraula + "<input type='text' class='a' id='" + paraula + "'>";
         }
         
         // Comprovar les respostes
@@ -64,7 +74,7 @@
             var puntuacio_final = puntuacio / 14 * 10;
             puntuacio_final = puntuacio_final.toFixed(2)
             // Mostrar la puntuació final
-            document.getElementById("puntuacio").innerHTML = "La teva puntuació final és: " + puntuacio_final;
+            document.getElementById("puntuacio").innerHTML = "La teva puntuació final és: " + puntuacio_final + "/10";
         }
     </script>
 </body>

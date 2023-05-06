@@ -1,7 +1,20 @@
 body {
-    margin: 0;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    box-shadow: 0 5px 10px rgba(211, 211, 211, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+    gap: 20px;
+}
+li {
+    list-style: none;
+    cursor: pointer;
 }
 h1 {
     text-align: center;
@@ -15,13 +28,70 @@ h1 {
 .menu button {
     color: #666666;
     background-color: silver;
-    margin-right: 50px;
     border-color:  rgb(255, 255, 255);
     font-size: 15px;
     margin-top: 10px;
-    margin-right: 59px;
+    margin-bottom: 10px;
+    margin-right: 55px;
     border: transparent;
     border-style: inset;
     border-radius: 30%;
     width: 90px;
+}
+
+
+
+section {
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    background: rgba(218, 215, 221, 0.808);
+    padding-top: 60px;
+}
+
+footer {
+display: flex;
+align-items: flex-start;
+gap: 40px;
+margin: 0 30px;
+}
+
+@media (width >= 620px) {
+footer {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+}
+#espai {
+    margin-top: 5%;
+}
+}
+
+footer.top {
+border-bottom: 2px solid #3a4f6a;
+padding-bottom: 20px;
+}
+
+footer.bottom {
+padding: 20px 0;
+justify-content: space-between;
+}
+
+footer h2 {
+margin: 0;
+font-size: 20px;
+font-weight: 400;
+color: #525252;
+}
+footer a {
+    color: rgb(73, 126, 150);
+    font-weight: 800;
+    font-size: 15px;
+
+}
+@media (width < 420px) {
+footer {
+    text-align: center;
+    align-items: center;
+}
 }
