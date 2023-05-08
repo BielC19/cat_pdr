@@ -36,10 +36,29 @@ h1 {
     border: transparent;
     border-style: inset;
     border-radius: 30%;
-    width: 90px;
+    width: 110px;
 }
-
-
+.links_marc {
+    display: flex;
+    padding-left: 20px;
+}
+#marc {
+    position: relative;
+}
+#marc:hover .links_marc {
+    display: block;
+}
+.links_marc {
+    position: absolute;
+    top: 100%;
+    background-color: aliceblue;
+    width: 120px;
+    display: none;
+    border-radius: 0 0 10px 10px;
+    padding-top: 5px;
+    box-shadow: 10px 10px 10px rgba(211, 211, 211, 0.8);
+    border-top: 1px solid rgba(211, 211, 211, 0.8);
+}
 
 section {
     left: 0;
