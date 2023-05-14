@@ -18,9 +18,15 @@ li {
     cursor: pointer;
 }
 h1 {
+    color: rgb(1, 1, 90);
     text-align: center;
     font-size: 54px;
     margin-top: 20px;
+}
+.link {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.699);
 }
 .menu {
     text-align: center;
@@ -39,17 +45,17 @@ h1 {
     border-radius: 30%;
     width: 110px;
 }
-.links_marc {
+.links_marc, .links_jocs {
     display: flex;
     padding-left: 20px;
 }
-#marc {
+#marc, #jocs {
     position: relative;
 }
-#marc:hover .links_marc {
+#marc:hover .links_marc, #jocs:hover, .links_jocs{
     display: block;
 }
-.links_marc {
+.links_marc, .links_jocs {
     position: absolute;
     top: 100%;
     background-color: aliceblue;

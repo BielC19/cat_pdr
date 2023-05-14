@@ -1,6 +1,5 @@
-
-h1 {
-    background-color: rgba(245, 245, 245, 0.8);
+body {
+    background-color: rgba(206, 206, 206, 0.342);
 }
 #subtitul {
     margin-left: 6%;
@@ -19,9 +18,8 @@ h1 {
 a {
     text-decoration:none;
 }
-p { 
-    background-color: whitesmoke;
-    margin-top: -5px;
+p {
+        margin-top: -5px;
     font-size: 80%;
     color: rgb(85, 85, 85);
     margin-right: 14%;

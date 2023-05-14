@@ -1,4 +1,6 @@
-
+body {
+    background-color: rgba(206, 206, 206, 0.178);
+}
 h2 {
     color: rgb(32, 32, 32);
     padding-left: 110px;

@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Joc de paraules en català</title>
-    <link rel="stylesheet" href="./.css/prova2.css">
-    <link rel="stylesheet" href="./.css/general.css">
-</head>
-<body>
-    <div class="menu">
-        <ul>
-            <li><a href="cat_pdr.html"><button id="buto_dreta">Inici</button></a></li>
-            <li><a href="objectius.html"><button id="buto_mid">Objectius</button></a></li>
-            <li id="marc">
-                <a href="marc_teoric.html"><button>Marc teòric &#9662;</button></a>
-                <ul class="links_marc">
-                    <li><a href="r_app.html">Resserca</a></li>
-                    <li><a href="infosobre2.html">Un parell</a></li>
-                    <li><a href="aspecte,lexic.html">Aspectes jocs</a></li>
-                    <li><a href="tipusjocs.html">Tipus jocs</a></li>
-                    <li><a href="tipuspublic.html">Public</a></li>
-                </ul>
-            </li>
-            <li><a href="cat_prova2.html"><button>Primer joc</button></a></li>
-            <li><a href="cat_prova3.html"><button id="buto_mid">Segon joc</button></a></li>
-            <li><a href="cat_prova4.html"><button id="buto_esquerra">Tercer joc</button></a></li>
-        </ul>
-    </div>
-    <h1>Joc de paraules en català</h1>
+    <head>
+        <link rel="stylesheet" href="./.css/prova2.css">
+        <title>Trevall de reserca Enzo i Biel</title>
+        <link type="image/png" rel="icon" href="./logo.png"">
+        <link rel="stylesheet" href="./.css/general.css">
+    </head>
+    <body>
+        <div class="menu">
+            <ul>
+                <li><a href="cat_pdr.html"><button id="buto_dreta">Inici</button></a></li>
+                <li><a href="objectius.html"><button id="buto_mid">Objectius</button></a></li>
+                <li id="marc">
+                    <a href="marc_teoric.html"><button>Marc teòric &#9662;</button></a>
+                    <ul class="links_marc">
+                        <li><a href="r_app.html">Resserca</a></li>
+                        <li><a href="infosobre2.html">Un parell</a></li>
+                        <li><a href="aspecte,lexic.html">Aspectes jocs</a></li>
+                        <li><a href="tipusjocs.html">Tipus jocs</a></li>
+                        <li><a href="tipuspublic.html">Public</a></li>
+                    </ul>
+                </li>
+                <li><a href="cat_prova2.html"><button>Primer joc</button></a></li>
+                <li><a href="cat_prova3.html"><button id="buto_mid">Segon joc</button></a></li>
+                <li><a href="cat_prova4.html"><button id="buto_esquerra">Tercer joc</button></a></li>
+            </ul>
+        </div>
+        <h1>Joc de paraules en català</h1>
 
-    <p>Tradueix les paraules de l'anglès al català:</p>
-    <h6>Tingues en compte els accents</h6>
+        <p>Tradueix les paraules de l'anglès al català:</p>
+        <h6>Tingues en compte els accents</h6>
 
-    <div id="paraules"></div>
+        <div id="paraules"></div>
 
-    <button id="bt" onclick="comprovarRespostes()">Comprovar</button>
+        <button id="bt" onclick="comprovarRespostes()">Comprovar</button>
 
-    <p id="puntuacio"></p>
-	<section>
-		<footer class="top">
-			<h2>Contacte:</h2><br>
-			<a href="cat_enzo.html">Enzo Garrido</a><br>
-            <a href="cat_biel.html">Biel Costa</a>
-		</footer>
-		<footer class="bottom">
-		</footer>
-	</section>
-    <script>
-        // Llista de paraules en anglès i les seves respostes en català
-        var paraules = {
-            "book": "llibre",
-            "house": "casa",
-            "tree": "arbre",
-            "car": "cotxe",
-            "chair": "cadira",
-            "water": "aigua",
-            "sun": "sol",
-            "food": "menjar",
-            "music": "música",
-            "dog": "gos",
-            "yes": "si",
-            "game": "joc",
-            "fier": "foc",
-            "ball": "pilota",
-            "run": "corre"
-        };
-        
-        var puntuacio = 0;
-        
-        // Mostrar les paraules en anglès i caixes per a les respostes
-        for (var paraula in paraules) {
-            document.getElementById("paraules").innerHTML += paraula + "<input type='text' class='a' id='" + paraula + "'>";
-        }
-        
-        // Comprovar les respostes
-        function comprovarRespostes() {
-            puntuacio = 0;
+        <p id="puntuacio"></p>
+        <section>
+            <footer class="top">
+                <h2>Contacte:</h2><br>
+                <a href="cat_enzo.html">Enzo Garrido</a><br>
+                <a href="cat_biel.html">Biel Costa</a>
+            </footer>
+            <footer class="bottom">
+            </footer>
+        </section>
+        <script>
+            // Llista de paraules en anglès i les seves respostes en català
+            var paraules = {
+                "book": "llibre",
+                "house": "casa",
+                "tree": "arbre",
+                "car": "cotxe",
+                "chair": "cadira",
+                "water": "aigua",
+                "sun": "sol",
+                "food": "menjar",
+                "music": "música",
+                "dog": "gos",
+                "yes": "si",
+                "game": "joc",
+                "fier": "foc",
+                "ball": "pilota",
+                "run": "corre"
+            };
+            
+            var puntuacio = 0;
+            
+            // Mostrar les paraules en anglès i caixes per a les respostes
             for (var paraula in paraules) {
-                var resposta = document.getElementById(paraula).value;
-                if (resposta.toLowerCase() == paraules[paraula]) {
-                    puntuacio++;
-                }
+                document.getElementById("paraules").innerHTML += paraula + "<input type='text' class='a' id='" + paraula + "'>";
             }
-            var puntuacio_final = puntuacio / 14 * 10;
-            puntuacio_final = puntuacio_final.toFixed(2)
-            // Mostrar la puntuació final
-            document.getElementById("puntuacio").innerHTML = "La teva puntuació final és: " + puntuacio_final + "/10";
-        }
-    </script>
-</body>
+            
+            // Comprovar les respostes
+            function comprovarRespostes() {
+                puntuacio = 0;
+                for (var paraula in paraules) {
+                    var resposta = document.getElementById(paraula).value;
+                    if (resposta.toLowerCase() == paraules[paraula]) {
+                        puntuacio++;
+                    }
+                }
+                var puntuacio_final = puntuacio / 14 * 10;
+                puntuacio_final = puntuacio_final.toFixed(2)
+                // Mostrar la puntuació final
+                document.getElementById("puntuacio").innerHTML = "La teva puntuació final és: " + puntuacio_final + "/10";
+            }
+        </script>
+    </body>
 </html>
