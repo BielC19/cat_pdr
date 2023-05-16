@@ -1,5 +1,5 @@
 body {
-    background-color:  rgba(206, 206, 206, 0.479);
+    background-color:  #cecece7a;
 
 }
 h5 {
@@ -8,4 +8,50 @@ h5 {
 p {
     padding-left: 150px;
     padding-right: 110px;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btns button{
+    margin-left: 100px;
+    width: 120px;
+    height: 40px;
+    border-radius: 13px;
+    font-size: 17px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.btns button::before {
+    content: '' ;
+    width: 0;
+    height: 40px;
+    border-radius: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s ease;
+    display: flexbox;
+    z-index: 1;
+    
+}
+.btns button:hover::before {
+    width: 120px;
+    height: 40px;
+    
+}
+#joc1 button::before{
+    background-image: linear-gradient(to right, #ffffff57 0%, #faffe8 100%)
+}
+#joc2 button::before{
+    background-image: linear-gradient(to right, #ffffff57 0%, #fd9f9f 100%);
+}    
+#joc3 button::before{
+    background-image: linear-gradient(to right, #ffffff57 0%, #9fcffd 100%);
 }

@@ -1,3 +1,6 @@
+body {
+    background-color: #9fcffda8;
+}
 img {
     width: 401px;
     height: 300px;
@@ -8,7 +11,6 @@ img {
 .img3 {
     margin-top: 40px;
 }
-/* Estils per als botons */
 .bt {
     font-size: 16px;
     padding: 10px 20px;
