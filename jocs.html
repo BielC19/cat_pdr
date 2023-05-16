@@ -5,6 +5,29 @@
         <link type="image/png" rel="icon" href="./logo.png"">
         <link rel="stylesheet" href="./.css/general.css">
         <link rel="stylesheet" href="./.css/jocs.css">
+        <style>
+            .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+            .btns button{
+                margin-left: 100px;
+                width: 120px;
+                height: 40px;
+                border-radius: 13px;
+                font-size: 17px;
+                font-family: inherit;
+                border: none;
+                position: relative;
+                cursor: pointer;
+                z-index: 1;
+                box-shadow: 10px 10px 10px 10px #ffffff;
+            }
+            .btns button::before {
+                
+            }
+        </style>
     </head>
     <body>
         <div class="menu">
@@ -33,8 +56,10 @@
         <h5>Aquest es l'apartat practic del nostre treball de resseca,  que consisteix en tres jocs per apendre catala.</h5>
         <br>
         <p>Aquest projecte de recerca se centra en l'ús de jocs per a l'aprenentatge de la llengua catalana. L'objectiu és explorar l'eficàcia dels jocs com a eina d'aprenentatge per adquirir el català. Es realitzarà una revisió bibliogràfica per analitzar estudis existents sobre l'ús de jocs per a l'aprenentatge de llengües estrangeres, incloent-hi el català. S'estudiarà com els jocs poden millorar el vocabulari, la gramàtica i la comprensió oral en català. També s'exploraran els factors motivacionals i emocionals que influeixen en l'aprenentatge amb jocs. L'objectiu final és proporcionar una base teòrica per a la implementació de jocs en l'ensenyament del català i avaluar la seva efectivitat en el desenvolupament de les habilitats lingüístiques dels estudiants.</p>
-        <a href="cat_prova2.html"><button>Primer </button></a>
-        <a class="link" href="cat_prova3.html"><button>Segon joc</button></a>
-        <a class="link" href="cat_prova4.html"><button>Tercer joc</button></a>
+        <div class="btns">
+            <a class="link" href="cat_prova2.html"><button class="bbnt">Primer </button></a>
+            <a class="link" href="cat_prova3.html"><button class="bbnt">Segon joc</button></a>
+            <a class="link" href="cat_prova4.html"><button class="bbnt">Tercer joc</button></a>
+        </div>
     </body>
 </html>
