@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
 }
-ul {
+#ulmenu {
     box-shadow: 0 5px 10px rgba(211, 211, 211, 0.8);
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ ul {
     background-color: aliceblue;
     gap: 20px;
 }
-li {
+#ulmenu li {
     list-style: none;
     cursor: pointer;
 }
